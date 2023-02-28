@@ -12,12 +12,12 @@ try:
     st.title("Communication Style")
     u_input = st.text_input('Enter Numbers Comma Separated: ', '1,2,8,9')
     user_input = list(map(int,u_input.split(",")))
-
-    count_res={1:0,2:0,3:0,4:0}
+    
+    count_res={'Style 1':0,'Style 2':0,'Style 3':0,'Style 4':0}
     for i in user_input:
         for count,val in enumerate(data.values(),1):
             if i in val:
-                count_res[count]+=1
+                count_res['Style {}'.format(count)]+=1
 
     st.write("Your communication style is of : Style "+ str(max(zip(count_res.values(), count_res.keys()))[1]))
     st.write("All Scores: "+str(count_res))
