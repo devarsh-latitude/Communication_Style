@@ -8,7 +8,8 @@ try:
 
     for i in data.keys():
         data[i]=list(map(int,data[i].split('-')))
-
+        
+    st.title("Communication Style")
     u_input = st.text_input('Enter Numbers Comma Separated: ', '1,2,8,9')
     user_input = list(map(int,u_input.split(",")))
 
