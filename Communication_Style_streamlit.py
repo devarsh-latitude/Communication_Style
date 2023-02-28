@@ -20,5 +20,6 @@ try:
                 count_res[count]+=1
 
     st.write("Your communication style is of : Style "+ str(max(zip(count_res.values(), count_res.keys()))[1]))
+    st.write("All Scores: "+str(count_res))
 except:
     st.write("Please Enter Values Systematically only.")
