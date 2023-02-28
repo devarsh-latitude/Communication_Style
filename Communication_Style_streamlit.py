@@ -3,7 +3,7 @@ import json
 
 #Inputs : 1,2,3,4,5,6,7,8,9,10,11
 try:
-    with open("/home/devarsh/Devarsh/date_28_02/input_matching.json","r") as fs:
+    with open("input_matching.json","r") as fs:
         data = json.load(fs)
 
     for i in data.keys():
